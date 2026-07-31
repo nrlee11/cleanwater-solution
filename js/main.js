@@ -88,3 +88,56 @@ const countUpObserver = new IntersectionObserver(
 countUpElements.forEach((element) => {
   countUpObserver.observe(element);
 });
+(() => {
+  const topButton = document.querySelector(".top-button");
+
+  if (!topButton) return;
+
+  const updateTopButton = () => {
+    topButton.classList.toggle("is-visible", window.scrollY > 400);
+  };
+
+  window.addEventListener("scroll", updateTopButton, { passive: true });
+
+  topButton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+
+  updateTopButton();
+})();
+(() => {
+  const menuButton = document.querySelector(".menu-button");
+  const sideMenu = document.querySelector(".side-menu");
+  const closeButton = document.querySelector(".side-menu__close");
+  const overlay = document.querySelector(".side-menu-overlay");
+  const menuLinks = document.querySelectorAll(".side-menu__nav a");
+
+  if (!menuButton || !sideMenu) return;
+
+  const openMenu = () => {
+    document.body.classList.add("side-menu-open");
+    menuButton.setAttribute("aria-expanded", "true");
+  };
+
+  const closeMenu = () => {
+    document.body.classList.remove("side-menu-open");
+    menuButton.setAttribute("aria-expanded", "false");
+  };
+
+  menuButton.addEventListener("click", openMenu);
+  closeButton?.addEventListener("click", closeMenu);
+  overlay?.addEventListener("click", closeMenu);
+
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+})();

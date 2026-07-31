@@ -10,7 +10,11 @@
 
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-
+  <!-- 하단에 맨위로 가기 버튼 -->
+  <button type="button" class="top-button" aria-label="맨 위로 이동">
+    <span>↑</span>
+    <em>TOP</em>
+  </button>
   <body>
     <!-- 상단 헤더 -->
     <header class="header">
@@ -41,9 +45,37 @@
           </ul>
         </nav>
 
-        <a class="header__contact" href="#contact"> 무료상담 신청 </a>
+        <div class="header__actions">
+          <a class="header__contact" href="#contact"> 무료상담 신청 </a>
+
+          <button
+            type="button"
+            class="menu-button"
+            aria-label="메뉴 열기"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </header>
+    <div class="side-menu-overlay"></div>
+
+    <aside class="side-menu">
+      <button type="button" class="side-menu__close" aria-label="메뉴 닫기">
+        ×
+      </button>
+
+      <nav class="side-menu__nav">
+        <a href="#product">제품소개</a>
+        <a href="#technology">특장점</a>
+        <a href="#case">설치사례</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">무료상담 신청</a>
+      </nav>
+    </aside>
 
     <main>
       <!-- 메인 비주얼 -->
