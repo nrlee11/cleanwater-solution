@@ -1436,7 +1436,7 @@ img {
 
 .consult-cta {
   position: relative;
-  padding: 42px 0 38px;
+  padding: 82px 0 78px;
   color: #ffffff;
   background-color: #08aee0;
 }
@@ -1465,9 +1465,9 @@ img {
 }
 
 .consult-cta__text {
-  margin-bottom: 18px;
+  margin-bottom: 38px;
   font-family: "Paperlogy", Pretendard, sans-serif;
-  font-size: 19px;
+  font-size: 30px;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -1484,10 +1484,10 @@ img {
   gap: 8px;
   min-width: 130px;
   height: 40px;
-  padding: 2px 22px 0;
+  padding: 2px 22px;
   color: #ffffff;
   font-family: "Paperlogy", Pretendard, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
   border: 2px solid rgb(255 255 255 / 55%);
   border-radius: 999px;
@@ -1516,11 +1516,11 @@ img {
   gap: 8px;
   min-width: 130px;
   height: 40px;
-  padding: 2px 22px 0;
+  padding: 2px 22px;
   color: #08aee0;
   background-color: #ffffff;
   font-family: "Paperlogy", Pretendard, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
   border: 2px solid #ffffff;
   border-radius: 999px;
@@ -2548,7 +2548,7 @@ img {
 
     min-height: 28px;
     min-width: 0;
-    padding: 0 13px;
+    padding: 5px 13px;
     font-size: 12px;
     line-height: 1.45;
     border-radius: 50px;
@@ -2859,7 +2859,7 @@ img {
     -webkit-line-clamp: 3;
   }
   .consult-cta {
-    padding: 34px 0 30px;
+    padding: 54px 0 50px;
   }
 
   .consult-cta::before {
@@ -2873,16 +2873,24 @@ img {
   }
 
   .consult-cta__text {
-    margin-bottom: 14px;
-    font-size: 13px;
+    margin-bottom: 20px;
+    font-size: 18px;
     line-height: 1.6;
   }
 
-  .consult-cta__button {
+  .consult-cta__button1 {
     min-width: 108px;
     height: 34px;
     padding: 2px 17px 0;
-    font-size: 11px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .consult-cta__button2 {
+    min-width: 108px;
+    height: 34px;
+    padding: 2px 17px 0;
+    font-size: 13px;
+    white-space: nowrap;
   }
   .faq-section {
     padding: 65px 0 75px;
@@ -2939,7 +2947,7 @@ img {
 
   .faq-item__answer p {
     padding-left: 19px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.7;
   }
   .contact-section {
