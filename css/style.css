@@ -112,18 +112,25 @@ img {
 ============================== */
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
+  right: 0;
   left: 0;
-  z-index: 100;
+  z-index: 9999;
+
   width: 100%;
+  background-color: rgba(92, 137, 206, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .header__inner {
   display: flex;
   align-items: center;
-  width: min(1400px, calc(100% - 64px));
-  height: 88px;
+  justify-content: space-between;
+
+  width: min(1200px, calc(100% - 40px));
+  min-height: 76px;
   margin: 0 auto;
 }
 
@@ -207,8 +214,8 @@ img {
   align-items: center;
   width: 100%;
   margin-left: auto;
-  text-align: left;
-  padding: 130px 8% 80px;
+  text-align: right;
+  padding: 130px max(20px, calc((100vw - 1200px) / 2)) 80px 8%;
   overflow: hidden;
   color: #ffffff;
   background: url("../images/hero/hero-content-bg.png") center / cover no-repeat;
@@ -226,7 +233,7 @@ img {
   align-items: center;
   justify-content: center;
 
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   padding: 12px 28px;
 
   color: #ffffff;
@@ -256,11 +263,11 @@ img {
 }
 
 .hero__title {
-  margin-bottom: 26px;
+  margin-bottom: 50px;
   font-family: "Paperlogy", sans-serif;
   font-size: 50px;
   font-weight: 800;
-  line-height: 1.28;
+  line-height: 1.5;
 }
 
 .hero__title strong {
@@ -828,7 +835,7 @@ img {
 .technology {
   position: relative;
   /* overflow: hidden; */
-  padding: 80px 0 0;
+  padding: 140px 0 0;
   background:
     linear-gradient(rgb(235 249 255 / 18%), rgb(235 249 255 / 18%)),
     url("../images/section/technology-bg.jpg") center / cover no-repeat;
@@ -2285,16 +2292,20 @@ img {
 
 @media (max-width: 767px) {
   .header {
-    position: relative;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+
+    width: 100%;
+    transform: none;
   }
 
   .header__inner {
     width: calc(100% - 32px);
-    height: 64px;
+    min-height: 56px;
   }
-
   .header__logo img {
     width: 120px;
   }
