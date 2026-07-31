@@ -1015,6 +1015,7 @@ img {
 
 /* 카드 내부 본문 */
 .technology-card__list li {
+  font-family: "Paperlogy", Pretendard, sans-serif;
   position: relative;
   padding-left: 16px;
   color: #344054;
@@ -1140,11 +1141,13 @@ img {
 .evidence__description {
   margin-top: 18px;
   color: #062b61;
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 800;
   line-height: 1.8;
 }
-
+.evidence__description strong {
+  font-size: 30px;
+}
 /* 인증서 이미지 */
 .evidence__certificates {
   display: flex;
@@ -1489,7 +1492,7 @@ img {
   font-family: "Paperlogy", Pretendard, sans-serif;
   font-size: 16px;
   font-weight: 800;
-  border: 2px solid rgb(255 255 255 / 55%);
+  border: 2px solid #ffffff;
   border-radius: 999px;
   transition:
     background-color 0.2s ease,
