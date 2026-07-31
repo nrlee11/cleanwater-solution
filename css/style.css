@@ -2544,12 +2544,15 @@ img {
   }
 
   .process-item__description {
+    justify-content: center;
+
     min-height: 28px;
     min-width: 0;
     padding: 0 13px;
     font-size: 12px;
     line-height: 1.45;
     border-radius: 50px;
+    text-align: center;
   }
   .reason {
     padding: 70px 0 80px;
