@@ -1037,7 +1037,7 @@ img {
 /* 파란 점 */
 .technology-card__list li::before {
   position: absolute;
-  top: 10px;
+  top: 15px;
   left: 0;
   width: 5px;
   height: 5px;
@@ -1486,7 +1486,7 @@ img {
   margin-bottom: 38px;
   font-family: "Paperlogy", Pretendard, sans-serif;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.6;
 }
 .consult-cta__buttonbox {
@@ -1847,13 +1847,12 @@ img {
   justify-content: center;
   min-width: 420px;
   height: 52px;
-  padding: 3px 28px 0;
+  padding: 0px 28px;
 
   color: #ffffff;
   font-family: "Paperlogy", Pretendard, sans-serif;
   font-size: 17px;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  font-weight: 600;
 
   background: linear-gradient(180deg, #1f56ff 0%, #163fe3 50%, #0d2fcf 100%);
   border: 0;
@@ -3048,7 +3047,7 @@ img {
   }
 
   .footer__title {
-    margin-bottom: 14px;
+    margin-bottom: 5px;
     font-size: 17px;
   }
 
