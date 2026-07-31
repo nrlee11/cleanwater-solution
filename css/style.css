@@ -930,7 +930,10 @@ img {
   line-height: 1.6;
   text-align: center;
 }
-
+.technology__description strong {
+  color: #246ee9;
+  font-weight: 900;
+}
 /* 왼쪽 두 번째: 카드 2 */
 .technology-card--two {
   grid-area: card-two;
@@ -1245,11 +1248,11 @@ img {
 }
 .case-section__description strong {
   color: #00a9de;
-  font-weight: 800;
+  font-weight: 900;
 }
 .case-section__description span {
   color: #246ee9;
-  font-weight: 800;
+  font-weight: 900;
 }
 /* 카드 목록 */
 .case-grid {
