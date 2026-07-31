@@ -920,13 +920,14 @@ img {
 
 /* 왼쪽 첫 번째: 설명 */
 .technology__description {
+  font-family: "Paperlogy", Pretendard, sans-serif;
   grid-area: description;
   align-self: center;
   margin: 0;
   padding: 20px 30px;
   color: #253248;
   font-size: 28px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.6;
   text-align: center;
 }
@@ -1146,11 +1147,12 @@ img {
   margin-top: 30px;
   color: #062b61;
   font-size: 22px;
-  font-weight: 800;
-  line-height: 1.5;
+  font-weight: 600;
+  line-height: 2;
 }
 .evidence__description strong {
   font-size: 26px;
+  font-weight: 900;
 }
 /* 인증서 이미지 */
 .evidence__certificates {
@@ -1218,13 +1220,16 @@ img {
 
 .case-section__eyebrow {
   margin-bottom: 12px;
-  color: #00a9de;
+  color: #062b61;
   font-family: "Paperlogy", Pretendard, sans-serif;
-  font-size: 16px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 600;
   letter-spacing: 0.08em;
 }
-
+.case-section__eyebrow strong {
+  color: #00a9de;
+  font-weight: 800;
+}
 .case-section__title {
   color: #172033;
   font-family: "Paperlogy", Pretendard, sans-serif;
