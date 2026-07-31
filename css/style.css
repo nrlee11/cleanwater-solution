@@ -2597,7 +2597,7 @@ img {
     min-width: 78px;
     height: 28px;
     padding: 0px 10px;
-    font-size: 10px;
+    font-size: 14px;
   }
   .technology {
     padding: 55px 0;
@@ -2803,7 +2803,7 @@ img {
   .case-card__category {
     min-width: 76px;
     height: 24px;
-    padding: 2px 8px 0;
+    padding: 2px 8px;
     font-size: 9px;
   }
 
@@ -3245,11 +3245,11 @@ img {
   }
 
   .reason__grid {
-    gap: 26px 10px;
+    gap: 28px 10px;
   }
 
   .reason-card__label {
-    font-size: 9px;
+    font-size: 12px;
   }
   .water-coverage__title {
     font-size: 28px;
