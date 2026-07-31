@@ -226,13 +226,13 @@ img {
   align-items: center;
   justify-content: center;
 
-  margin-bottom: 55px;
-  padding: 12px 28px 9px;
+  margin-bottom: 40px;
+  padding: 12px 28px;
 
   color: #ffffff;
   font-family: "Paperlogy", Pretendard, sans-serif;
-  font-size: 24px;
-  font-weight: 800;
+  font-size: 35px;
+  font-weight: 700;
   line-height: 1.2;
 
   background-color: #062d63;
@@ -242,10 +242,10 @@ img {
 /* 말풍선 꼬리 */
 .hero__badge::after {
   position: absolute;
-  right: 10px;
-  bottom: -10px;
+  right: 20px;
+  bottom: -12px;
 
-  width: 31px;
+  width: 35px;
   height: 15px;
 
   content: "";
@@ -1966,6 +1966,18 @@ img {
   .hero {
     min-height: 680px;
   }
+  .hero__badge {
+    font-size: 26px;
+    white-space: nowrap;
+  }
+  /* 말풍선 꼬리 */
+  .hero__badge::after {
+    right: 15px;
+    bottom: -12px;
+
+    width: 35px;
+    height: 15px;
+  }
 
   .hero__content {
     padding-right: 40px;
@@ -2321,7 +2333,7 @@ img {
   .hero__badge {
     min-height: 38px;
     margin-bottom: 24px;
-    padding: 11px 20px 9px;
+    padding: 11px 20px;
     font-size: 17px;
     line-height: 1.2;
     letter-spacing: -0.02em;
