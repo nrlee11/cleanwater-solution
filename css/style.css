@@ -927,7 +927,7 @@ img {
   color: #253248;
   font-size: 28px;
   font-weight: 800;
-  line-height: 1.85;
+  line-height: 1.6;
   text-align: center;
 }
 
@@ -1139,14 +1139,14 @@ img {
 }
 
 .evidence__description {
-  margin-top: 18px;
+  margin-top: 30px;
   color: #062b61;
   font-size: 22px;
   font-weight: 800;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 .evidence__description strong {
-  font-size: 30px;
+  font-size: 26px;
 }
 /* 인증서 이미지 */
 .evidence__certificates {
@@ -2174,9 +2174,11 @@ img {
   }
 
   .evidence__description {
-    font-size: 16px;
+    font-size: 18px;
   }
-
+  .evidence__description strong {
+    font-size: 22px;
+  }
   .evidence__certificates img {
     width: min(100%, 780px);
   }
@@ -2720,14 +2722,12 @@ img {
 
   .evidence__description {
     margin-top: 14px;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.7;
   }
-
-  .evidence__description br {
-    display: none;
+  .evidence__description strong {
+    font-size: 18px;
   }
-
   .evidence__certificates {
     margin-bottom: 28px;
   }
@@ -2781,10 +2781,6 @@ img {
     margin-top: 12px;
     font-size: 12px;
     line-height: 1.7;
-  }
-
-  .case-section__description br {
-    display: none;
   }
 
   .case-grid {
@@ -2855,11 +2851,10 @@ img {
 
   .application-item__content p {
     display: -webkit-box;
-    overflow: hidden;
     font-size: 14px;
     line-height: 1.55;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    /* -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; */
   }
   .consult-cta {
     padding: 54px 0 50px;
@@ -2877,7 +2872,7 @@ img {
 
   .consult-cta__text {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
   }
 
@@ -3262,6 +3257,9 @@ img {
   }
   .application__title {
     font-size: 28px;
+  }
+  .application-item__content p {
+    font-size: 12px;
   }
   .contact-section__title {
     font-size: 28px;
