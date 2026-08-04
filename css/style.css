@@ -652,7 +652,7 @@ img {
   font-family: "Paperlogy", Pretendard, sans-serif;
   font-size: 20px;
   font-weight: 800;
-  line-height: 1.35;
+  /* line-height: 1.35; */
 
   background-color: #072f5d;
   border-radius: 999px;
@@ -672,7 +672,7 @@ img {
   color: #1b3045;
   font-size: 20px;
   font-weight: 500;
-  line-height: 1.55;
+  /* line-height: 1.55; */
   letter-spacing: -0.02em;
 
   background-color: rgb(255 255 255 / 94%);
