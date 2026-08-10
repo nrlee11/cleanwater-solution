@@ -141,3 +141,64 @@ countUpElements.forEach((element) => {
     }
   });
 })();
+const contactButton = document.querySelector(".header__contact");
+const contactSection = document.getElementById("contact");
+const header = document.querySelector(".header");
+
+let contactScrollAnimation;
+
+function getContactPosition() {
+  const headerHeight = header ? header.getBoundingClientRect().height : 0;
+
+  return (
+    contactSection.getBoundingClientRect().top + window.scrollY - headerHeight
+  );
+}
+
+function smoothScrollToContact() {
+  cancelAnimationFrame(contactScrollAnimation);
+
+  const startPosition = window.scrollY;
+  const startTime = performance.now();
+  const duration = 1200;
+
+  // CSS의 scroll-behavior와 중복되지 않게 설정
+  const originalScrollBehavior = document.documentElement.style.scrollBehavior;
+
+  document.documentElement.style.scrollBehavior = "auto";
+
+  function animate(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+
+    // 부드럽게 감속
+    const ease = 1 - Math.pow(1 - progress, 3);
+
+    // 이미지 로딩과 헤더 높이 변화를 매 순간 반영
+    const targetPosition = getContactPosition();
+
+    const nextPosition =
+      startPosition + (targetPosition - startPosition) * ease;
+
+    window.scrollTo(0, nextPosition);
+
+    if (progress < 1) {
+      contactScrollAnimation = requestAnimationFrame(animate);
+    } else {
+      window.scrollTo(0, getContactPosition());
+
+      document.documentElement.style.scrollBehavior = originalScrollBehavior;
+
+      history.replaceState(null, "", "#contact");
+    }
+  }
+
+  contactScrollAnimation = requestAnimationFrame(animate);
+}
+
+if (contactButton && contactSection) {
+  contactButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    smoothScrollToContact();
+  });
+}
